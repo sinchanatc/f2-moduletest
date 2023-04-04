@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--Title-->
+    <title>Student Management</title>
+     <!-- CSS File-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<h2 class="name">Student Management CRUD</h2>
+    <!--Table-->
+    <table>
+        <!--Row-1-->
+        <tr>
+            <!--Column-1-->
+            <td>
+                <!--Form-->
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                	
+                  <!--div-1-->
+                  <div class="form1">
+
+                    <div>
+                        
+                        <!--Validation Error-->
+                        <label class="validation-error hide" id="userNamevalidationError">This field is required</label>
+                        <!--Input User Name-->
+                        <input type="text" name="userName" id="userName" placeholder="Name">
+                    </div>
+                    <!--div-2-->
+                    <div>
+                        
+                        <!--Validation Error-->
+                        <label class="validation-error hide" id="emailvalidationError" >This field is required</label>
+                        <!--Input Roll No-->
+                        <input type="text" name="email" id="email" placeholder="Email">
+                    </div>
+                    <!--div-3-->
+                    <div>
+                        
+                        <!--Validation Error-->
+                        <label class="validation-error hide" id="gpavalidationError">This field is required</label>
+                       <!--Input Student Class-->
+                        <input type="number" name="gpa" id="gpa" placeholder="GPA">
+                    </div>
+                
+                
+                    <!--div-4-->
+                    <div>
+                        
+                        <!--Validation Error-->
+                        <label class="validation-error hide" id="agevalidationError">This field is required</label>
+                        <!--Input Total Subject-->
+                        <input type="number" name="age" id="age" placeholder="Age">
+                    </div>
+                    <!--div-5-->
+                    <div>
+                        
+                        <!--Validation Error-->
+                        <label class="validation-error hide" id="degreevalidationError">This field is required</label>
+                        <!--Input degree-->
+                        <input type="text" name="degree" id="degree" placeholder="Degree">
+                    </div>
+
+                </div>
+                    <!--div-6-->
+                    <div class="form-action-buttons">
+                        <!--Input Button-->
+                        <input type="submit" value="Add Student">
+                    </div>
+                </form>
+            </td>
+            <!--Column-2-->
+            <tr1>
+                <!--Nested Table-->
+                <table class="list" id="stdlist" style="background-color: #C2976D;">
+                    <!--Table Head-->
+                    <thead>
+                        <!--Row-2-->
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Email</th>
+                            <th>Age</th>
+                            <th>GPA</th>
+                            <th>Degree</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <!--Table Body-->
+                    <tbody>
+                    </tbody>
+                </table>
+            </tr1>
+        </tr>
+    </table>
+    <!-- JS File-->
+    <script src="JS/script.js"></script>
+</body>
+</html>
+
